@@ -12,11 +12,7 @@ output.style.visibility = 'hidden';
 kgInput.addEventListener('input', e => {
     let kg = e.target.value;
     
-    if (kg === '0'){
-        output.style.visibility = 'hidden';
-    } else {
-    output.style.visibility = 'visible';
-    };
+    output.style.visibility = (kg === '0') ? 'hidden' : 'visible';
     
     gramOutput.innerHTML = `${kg * 1000} g`; //grammid on kg korda 1000, lauses kuvatakse ühikud 
     
