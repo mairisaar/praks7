@@ -16,8 +16,8 @@ kgInput.addEventListener('input', e => {
     
     gramOutput.innerHTML = `${kg * 1000} g`; //grammid on kg korda 1000, lauses kuvatakse ühikud 
     
-    poundOutput.innerHTML = `${kg * 2.20462262} lb`; //naelad on kg korda 2.205, lauses kuvatakse ühikud 
+    poundOutput.innerHTML = `${(kg * 2.20462262).toFixed(2)} lb`; //naelad on kg korda 2.205, lauses kuvatakse ühikud 
     
-    ozOutput.innerHTML = `${kg * 35.2739619} oz`; //untsid on kg korda 2.205, lauses kuvatakse ühikud 
+    ozOutput.innerHTML = `${(kg * 35.2739619).toFixed(2)} oz`; //untsid on kg korda 2.205, lauses kuvatakse ühikud 
 });
 
