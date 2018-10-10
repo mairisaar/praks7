@@ -7,24 +7,37 @@
     <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
 </head>
 <body>
-    <h1>Kaalu teisendamine</h1>
-    <form action="">
-        <input type="number" placeholder="Sisesta kaal kilogrammides..." id="kgInput" min="0">
-    </form>
-    <table id="output">
-        <tr>
-            <td>Grammid</td>
-            <td id="gramOutput"></td>
-        </tr>
-        <tr>
-            <td>Naelad</td>
-            <td id="poundOutput"></td>
-        </tr>
-        <tr>
-            <td>Untsid</td>
-            <td id="ozOutput"></td>
-        </tr>
-    </table>
-    <script src="main.js"></script>
+   <div class="container">
+        <h1>Kaalu teisendamine</h1>
+        <div class="info">
+            <form action="">
+                <input type="number" placeholder="Sisesta kaal kilogrammides..." id="kgInput" min="0">
+            </form>
+            <div class="table">
+                <table id="output">
+                    <tr>
+                        <td class="name">Grammid</td>
+                        <td id="gramOutput"></td>
+                    </tr>
+                    <tr>
+                        <td class="name">Naelad</td>
+                        <td id="poundOutput"></td>
+                    </tr>
+                    <tr>
+                        <td class="name">Untsid</td>
+                        <td id="ozOutput"></td>
+                    </tr>
+                </table>
+            </div>
+            <script src="main.js"></script>
+        </div>
+        
+        <div>
+           
+           <button id="nightToggle">Vaheta tausta</button>
+            
+        </div>
+        
+    </div>
 </body>
 </html>

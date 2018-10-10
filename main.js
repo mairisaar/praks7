@@ -4,6 +4,8 @@ let gramOutput = document.getElementById('gramOutput');
 let poundOutput = document.getElementById('poundOutput');
 let ozOutput = document.getElementById('ozOutput');
 let output = document.getElementById('output');
+let nightToggle = document.getElementById('nightToggle');
+let body = document.querySelector('body');
 
 output.style.visibility = 'hidden';
 
@@ -21,3 +23,6 @@ kgInput.addEventListener('input', e => {
     ozOutput.innerHTML = `${(kg * 35.2739619).toFixed(2)} oz`; //untsid on kg korda 2.205, lauses kuvatakse ühikud 
 });
 
+nightToggle.addEventListener('click', event => {
+    body.classList.toggle('night');
+})
